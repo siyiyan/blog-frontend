@@ -5,7 +5,6 @@
     "json": "json-server --watch db.json",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "build": "gridsome build",
     "all": "concurrently \"npm run json\" \"npm run develop\""
   },
   "dependencies": {
