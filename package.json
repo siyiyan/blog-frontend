@@ -2,9 +2,12 @@
   "name": "my-gridsome",
   "private": true,
   "scripts": {
+    "json": "json-server --watch db.json",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "build": "gridsome build"
+    "build": "gridsome build",
+    
+    "all": "concurrently \"npm run json\" \"npm run develop\""
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
@@ -12,5 +15,8 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "gridsome": "^0.7.0"
+  },
+  "devDependencies": {
+    "json-server": "^0.16.3"
   }
 }
